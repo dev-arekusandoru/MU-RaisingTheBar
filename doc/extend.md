@@ -536,9 +536,7 @@ Though the dimensions of the icon can vary between iOS devices and versions one
 `180×180px` touch icon named `icon.png` and including the following in the
 `<head>` of the page is enough:
 
-```html
-<link rel="apple-touch-icon" href="icon.png">
-```
+
 
 For a more comprehensive overview, please refer to Mathias' [article on Touch
 Icons](https://mathiasbynens.be/notes/touch-icons).
