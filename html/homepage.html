@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/tileStyles.css">
 </head>
 <body>
+<!--Navigation Bar-->
 <nav>
   <div id="left-nav">
     <img src="../img/image.png" alt="">
@@ -21,11 +22,13 @@
   </ul>
 </nav>
 
+<!--First row of tiles-->
 <div class="tiles" id="top-div">
+  <!--About Portion-->
   <div class="tile-div" id="about">
-    <div class="tile-header">
+    <header class="tile-header">
       <h1>About</h1>
-    </div>
+    </header>
     <div class="tile-body">
       <img id="about-img" src="../img/transparent.png" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem
@@ -36,11 +39,13 @@
     </div>
 
   </div>
+  <!--Contact Portion-->
+
   <div class="tile-div" id="contact">
-    <div class="tile-header">
+    <header class="tile-header">
       <h1>Contact</h1>
-    </div>
-    <div class="tile-body" id="contact-body">
+    </header>
+    <section class="tile-body" id="contact-body">
       <form id="contact-name-form">
         <input class="text-input" id="name-input" type="text" required>
         <label for="name-input">Name</label>
@@ -54,11 +59,28 @@
         <textarea name="comments" id="contact-comments" cols="30" rows="10"></textarea>
       </form>
 
-    </div>
+    </section>
   </div>
 </div>
+
+<!--Second row of tiles-->
 <div class="tiles">
-  <div class="tile-div" id="episodes"></div>
+  <!--Episodes Portion-->
+  <div class="tile-div" id="episodes">
+    <header class="tile-header">
+      <h1>Episodes</h1>
+    </header>
+    <section class="tile-body">
+      <div class="gallery-episode">
+        <img src="" alt="">
+      </div>
+      <div class="gallery-episode"></div>
+      <div class="gallery-episode"></div>
+      <div class="gallery-episode"></div>
+      <div class="gallery-episode"></div>
+    </section>
+  </div>
+
 </div>
 
 
