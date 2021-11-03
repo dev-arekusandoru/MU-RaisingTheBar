@@ -1,0 +1,96 @@
+/* redefine/clarify style rules for tile divs */
+.tile-div {
+  height: 350px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+.tile-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-evenly;
+  clear: both;
+}
+.tile-body h1 {
+  margin-top: 0.4em;
+  text-align: left;
+  padding-left: 0.6em;
+  margin-bottom: 0;
+  letter-spacing: 0.1em;
+}
+.tile-body p {
+  font-size: 1.1em;
+  padding-left: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  letter-spacing: 0.1em;
+  overflow: auto;
+}
+.tile-body button {
+  border: solid 1px #2c363f;
+  border-radius: 5px;
+  background-color: #2c363f;
+  color: #eaeaea;
+  height: 3em ;
+  width: 7em;
+  float: right;
+}
+
+/*Layout selector button code*/
+#episodes-page-layout {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 8px -8px 0 -8px;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+#layoutSelector {
+  transition: 0.2s all;
+
+  width: 150px;
+  height: 40px;
+  background-color: #eaeaea;
+
+  border: solid 1px #2c363f;
+  border-radius: 10px;
+
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(44, 54, 63, 255);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+}
+#layoutSelector span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 150px;
+  height: 40px;
+
+  padding: 5px 0 5px 0;
+}
+#layoutSelector span img {
+  width: 15%;
+}
+#layoutSelector, #gridLayout, #listLayout {
+  transition: 0.3s;
+}
+#layoutSelector:hover {
+  cursor: pointer;
+}
+#gridLayout {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+#layoutSelector:hover #gridLayout {
+  margin-top: -50px;
+}
+

@@ -1,8 +1,8 @@
 .tiles {
-
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  justify-content: space-evenly;
 }
 
 .tile-div {
@@ -11,7 +11,6 @@
   background-color: #eaeaea;
   border: solid 5px #2c363f;
   border-radius: 30px;
-  margin: auto;
 }
 .tile-header{
   height: 19%;
@@ -32,6 +31,7 @@
   color: #2c363f;
   -webkit-text-stroke: 0.7px #eaeaea;
   font-size: 36px;
+  text-shadow: 2px 2px #000000;
 }
 .tile-body {
   display: flex;
