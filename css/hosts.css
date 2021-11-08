@@ -1,0 +1,53 @@
+#top-div {
+  margin-top: 40px;
+}
+
+
+#host-1 {
+  margin-top: 30px;
+  height: 500px;
+  width: 40%;
+  position: relative;
+  float: left;
+}
+
+#host-2 {
+  margin-top: 30px;
+  height: 500px;
+  width: 40%;
+  position: relative;
+  float: left;
+}
+
+#host-1-body {
+  padding-inline: 8%;
+}
+
+#host-2-body {
+  padding-inline: 8%;
+}
+
+
+#host-3 {
+  margin-top: 70px;
+  height: 500px;
+  width: 40%;
+  position: relative;
+  float: left;
+}
+
+#host-4 {
+  margin-top: 70px;
+  height: 500px;
+  width: 40%;
+  position: relative;
+  float: left;
+}
+
+#host-3-body {
+  padding-inline: 8%;
+}
+
+#host-4-body {
+  padding-inline: 8%;
+}

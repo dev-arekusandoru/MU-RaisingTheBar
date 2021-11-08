@@ -1,94 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raising the Bar</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link rel="stylesheet" href="../css/navStyle.css">
-  <link rel="stylesheet" href="../css/tileStyles.css">
-  <link rel="stylesheet" href="../css/homepage.css">
-</head>
-<body>
-<!--Navigation Bar-->
-<nav>
-  <section id="left-nav">
-    <img src="../img/image.png" alt="">
-    <label><a href="homepage.html">Raising the Bar</a></label>
-  </section>
-  <section id="right-nav">
-    <ul>
-      <li><a href="../html/hosts.html">Hosts</a></li>
-      <li><a href="../html/episodes.html">Episodes</a></li>
-      <li><a href="../html/merch.html">Merch</a></li>
-    </ul>
-  </section>
-</nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raising the Bar</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" href="../css/navStyle.css">
+        <link rel="stylesheet" href="../css/tileStyles.css">
+        <link rel="stylesheet" href="../css/homepage.css">
+    </head>
 
-<!--First row of tiles-->
-<div class="tiles" id="top-div">
-  <!--About Portion-->
-  <div class="tile-div" id="about">
-    <header class="tile-header">
-      <h1>About</h1>
-    </header>
-    <div class="tile-body">
-      <img id="about-img" src="../img/transparent.png" alt="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem
-        ligula, dignissim non magna nec, ullamcorper suscipit lacus. Vivamus
-        <br>neque ipsum, vestibulum vel ligula vitae,
-        <br> porta sodales turpis. Aenean non ex dui.</p>
-      <button>Hosts</button>
-    </div>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <section id="left-nav">
+                <img src="../img/image.png" alt="">
+                <label><a href="homepage.html">Raising the Bar</a></label>
+            </section>
 
-  </div>
-  <!--Contact Portion-->
+            <section id="right-nav">
+                <ul>
+                    <li><a href="../html/hosts.html">Hosts</a></li>
+                    <li><a href="../html/episodes.html">Episodes</a></li>
+                    <li><a href="../html/merch.html">Merch</a></li>
+                </ul>
+            </section>
+        </nav>
 
-  <div class="tile-div" id="contact">
-    <header class="tile-header">
-      <h1>Contact</h1>
-    </header>
-    <section class="tile-body" id="contact-body">
-      <form id="contact-name-form">
-        <input class="text-input" id="name-input" type="text" required>
-        <label for="name-input">Name</label>
-      </form>
-      <form id="contact-email-form">
-        <input class="text-input" id="email-input" type="text" required>
-        <label for="email-input">Email</label>
-      </form>
-      <form id="contact-comments-form">
-        <label for="contact-comments">Comments</label>
-        <textarea name="comments" id="contact-comments" cols="30" rows="10"></textarea>
-      </form>
+        <!--First row of tiles-->
+        <div class="tiles" id="top-div">
 
-      <a href="mailto:a.muresan8533@gmail.com?subject=Test%20Email">Submit</a>
+            <!--About Portion-->
+            <div class="tile-div" id="about">
+                <header class="tile-header">
+                    <h1>About</h1>
+                    <link rel="stylesheet" href="../css/hosts.css"> <!-- Where do I put this? -->
+                </header>
 
-    </section>
-  </div>
-</div>
+                <div class="tile-body">
+                    <img id="about-img" src="../img/transparent.png" alt="">
 
-<!--Second row of tiles-->
-<div class="tiles">
-  <!--Episodes Portion-->
-  <div class="tile-div" id="episodes">
-    <header class="tile-header">
-      <h1>Episodes</h1>
-    </header>
-    <section class="tile-body">
-      <div class="gallery-episode">
-        <img src="" alt="">
-      </div>
-      <div class="gallery-episode"></div>
-      <div class="gallery-episode"></div>
-      <div class="gallery-episode"></div>
-      <div class="gallery-episode"></div>
-    </section>
-  </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem
+                      ligula, dignissim non magna nec, ullamcorper suscipit lacus. Vivamus
+                      <br>neque ipsum, vestibulum vel ligula vitae,
+                      <br> porta sodales turpis. Aenean non ex dui.
+                    </p>
 
-</div>
+                    <button>Hosts</button>
+                </div>
+
+            </div>
 
 
+            <!--Contact Portion-->
+            <div class="tile-div" id="contact">
+                <header class="tile-header">
+                    <h1>Contact</h1>
+                </header>
 
-</body>
+                <section class="tile-body" id="contact-body">
+                    <form id="contact-name-form">
+                          <input class="text-input" id="name-input" type="text" required>
+                          <label for="name-input">Name</label>
+                    </form>
+                    <!--  ---------------------------  -->
+                    <form id="contact-email-form">
+                          <input class="text-input" id="email-input" type="text" required>
+                          <label for="email-input">Email</label>
+                    </form>
+                    <!--  ---------------------------  -->
+                    <form id="contact-comments-form">
+                          <label for="contact-comments">Comments</label>
+                          <textarea name="comments" id="contact-comments" cols="30" rows="10"></textarea>
+                    </form>
+
+                    <a href="mailto:a.muresan8533@gmail.com?subject=Test%20Email">Submit</a>
+
+                </section>
+
+            </div>
+
+        </div>
+
+
+        <!--Second row of tiles-->
+        <div class="tiles">
+
+            <!--Episodes Portion-->
+            <div class="tile-div" id="episodes">
+                <header class="tile-header">
+                    <h1>Episodes</h1>
+                </header>
+
+
+                <section class="tile-body">
+                      <div class="gallery-episode">
+                          <img src="" alt="">
+                      </div>
+                      <div class="gallery-episode"></div>
+                      <div class="gallery-episode"></div>
+                      <div class="gallery-episode"></div>
+                      <div class="gallery-episode"></div>
+                </section>
+            </div>
+
+        </div>
+
+
+
+    </body>
 </html>
