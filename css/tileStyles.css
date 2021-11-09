@@ -1,18 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
 .tiles {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  justify-content: space-evenly;
+  margin: 20px;
   flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
 }
 .tile-div {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   height: 400px;
+
   background-color: #eaeaea;
+
   border: solid 5px #2c363f;
   border-radius: 30px;
+  margin: 20px 20px 10px 20px;
+
+  text-align: center;
 }
 .tile-header{
+  width: 101%;
   height: 20%;
   background-color: #2c363f;
   border-top-left-radius: 20px;
@@ -35,6 +50,8 @@
   text-shadow: 2px 2px #000000;
 }
 .tile-body {
+  margin: 0;
+  height: 80%;
   display: flex;
   flex-direction: row;
 }

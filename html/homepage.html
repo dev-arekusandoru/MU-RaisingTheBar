@@ -31,82 +31,50 @@
     </div>
 </nav>
 
-<!--First row of tiles-->
-<div class="tiles" id="top-div">
-
-    <!--About Portion-->
+<!--Tiles-->
+<div class="tiles">
     <div class="tile-div" id="about">
         <header class="tile-header">
             <h1>About</h1>
         </header>
-
         <div class="tile-body">
-            <img id="about-img" src="../img/transparent.png" alt="">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem
-                ligula, dignissim non magna nec, ullamcorper suscipit lacus. Vivamus neque ipsum, vestibulum vel ligula
-                vitae,
-                porta sodales turpis. Aenean non ex dui.
-            </p>
-
-            <button>Hosts</button>
+            <img src="../img/transparent.png" alt="Raising The Bar Logo" id="about-img">
+            <div id="about-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem
+                    ligula, dignissim non magna nec, ullamcorper suscipit lacus.
+                    Vivamus neque ipsum, vestibulum vel ligula vitae, porta sodales turpis.</p>
+                <a href="../html/hosts.html">Hosts</a>
+            </div>
         </div>
-
     </div>
 
-
-    <!--Contact Portion-->
     <div class="tile-div" id="contact">
         <header class="tile-header">
             <h1>Contact</h1>
         </header>
-
-        <section class="tile-body" id="contact-body">
-            <form id="contact-name-form">
-                <input class="text-input" id="name-input" type="text" required>
-                <label for="name-input">Name</label>
+        <div class="tile-body">
+            <form id="contact-form">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email" id="email-label"></label>
+                <input type="email" id="email" name="email">
+                <div>
+                <label for="comments" id="comments-label">Comments:</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" id="submit" value="Send">
             </form>
-            <!--  ---------------------------  -->
-            <form id="contact-email-form">
-                <input class="text-input" id="email-input" type="text" required>
-                <label for="email-input">Email</label>
-            </form>
-            <!--  ---------------------------  -->
-            <form id="contact-comments-form">
-                <label for="contact-comments">Comments</label>
-                <textarea name="comments" id="contact-comments" cols="30" rows="10"></textarea>
-            </form>
-
-            <a href="mailto:a.muresan8533@gmail.com?subject=Test%20Email">Submit</a>
-
-        </section>
-
+        </div>
     </div>
 
-</div>
-
-
-<!--Second row of tiles-->
-<div class="tiles">
-
-    <!--Episodes Portion-->
-    <div class="tile-div" id="episodes">
+    <div class="tile-div" id="episodes-gallery">
         <header class="tile-header">
             <h1>Episodes</h1>
         </header>
+        <div class="tile-body">
 
-
-        <section class="tile-body">
-            <div class="gallery-episode">
-                <img src="" alt="">
-            </div>
-            <div class="gallery-episode"></div>
-            <div class="gallery-episode"></div>
-            <div class="gallery-episode"></div>
-            <div class="gallery-episode"></div>
-        </section>
+        </div>
     </div>
-
 </div>
 
 <script src="../js/nav.js"></script>
