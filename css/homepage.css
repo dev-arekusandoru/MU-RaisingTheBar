@@ -30,7 +30,8 @@
     height: 230px;
     padding: 5px;
     margin: 10px 10px 20px 10px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 #about-content a {
     background-color: #2c363f;
@@ -62,38 +63,57 @@
     width: 30%;
 }
 #contact .tile-body {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    width: 100%;
+
 }
 #contact-form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    padding-top: 7px;
+    margin: 0;
+    width: 100%;
 }
-#contact-form div {
+
+#name-field, #email-field {
+    width: 100%;
+    position: relative;
+}
+#name-field {
+    margin-bottom: 5px;
+}
+#name, #email {
+    width: 80%;
+    line-height: 18px;
+    border: none;
+    border-bottom: 1px solid #2c363f;
+    background-color: #eaeaea;
+    font-size: 16px;
+}
+
+#name-field label, #email-field label {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    color: #2c363f;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+#name:valid~label, #name:focus~label, #email:valid~label, #email:focus~label{
+    font-size: 14px;
+    top: -16px;
+}
+
+#comments-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
+    width: 80%;
 
-    margin: 10px 25px;
-
+    margin: 0 25px;
 }
-
-#name, #email {
-    width: 100%;
-    border: none;
-    background-color: #eaeaea;
-    border-bottom: 1px solid #2c363f;
-    line-height: 25px;
-    margin: 10px 25px;
-    color: #2c363f;
-    font-size: 16px;
-    padding-left: 5px;
-}
-
 #comments-label {
     align-self: flex-start;
 }
@@ -103,6 +123,7 @@
     resize: none;
     height: 120px;
     background-color: #eaeaea;
+    padding: 10px;
 }
 
 #submit {

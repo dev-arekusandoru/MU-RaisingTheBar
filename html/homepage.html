@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/navStyle.css">
     <link rel="stylesheet" href="../css/tileStyles.css">
     <link rel="stylesheet" href="../css/homepage.css">
+
+    <link rel="shortcut icon" href="../img/transparent.png">
 </head>
 
 <body>
@@ -54,13 +56,17 @@
         </header>
         <div class="tile-body">
             <form id="contact-form">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email" id="email-label"></label>
-                <input type="email" id="email" name="email">
-                <div>
-                <label for="comments" id="comments-label">Comments:</label>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <div id="name-field">
+                    <input type="text" id="name" required>
+                    <label for="name" id="name-label">Name</label>
+                </div>
+                <div id="email-field">
+                    <input type="email" id="email" required>
+                    <label for="email" id="email-label">Email</label>
+                </div>
+                <div id="comments-div">
+                    <label for="comments" id="comments-label">Comments:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
                 </div>
                 <input type="submit" id="submit" value="Send">
             </form>
