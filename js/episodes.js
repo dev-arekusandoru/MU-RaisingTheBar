@@ -19,13 +19,6 @@ function myFunction(x) {
     if(vw < 800) {
         tilesLayout.classList.remove('toggle');
     }
-
-        /*if (x.matches) { // If media query matches
-        tilesLayout.classList.remove('toggle');
-        document.getElementById('episodes-page-layout').
-    } else {
-
-    }*/
 }
 
 const x = window.matchMedia("(max-width: 800px)");
