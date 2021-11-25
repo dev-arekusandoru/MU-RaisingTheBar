@@ -1,51 +1,71 @@
-#top-div {
-  margin-top: 40px;
-}
-#host-1 {
-  margin-top: 30px;
-  height: 500px;
-  width: 40%;
-  position: relative;
-  float: left;
+.tiles {
+    justify-content: space-evenly;
 }
 
-#host-2 {
-  margin-top: 30px;
-  height: 500px;
-  width: 40%;
-  position: relative;
-  float: left;
+#host-1, #host-2 {
+    width: 44vw;
+
 }
 
-#host-1-body {
-  padding-inline: 8%;
-}
-
-#host-2-body {
-  padding-inline: 8%;
+#host-3, #host-4, #host-5 {
+    width: 30%;
 }
 
 
-#host-3 {
-  margin-top: 70px;
-  height: 500px;
-  width: 40%;
-  position: relative;
-  float: left;
+.tile-body p {
+    padding: 10px;
+    font-size: 22px;
+    height: 100%;
+    background-color: red;
+    overflow-y: scroll;
+}
+.host-pfp {
+    position: relative;
+    margin-right: 5px;
+    float: left;
+
+}
+.host-pfp img {
+    position: relative;
+    height: 250px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-#host-4 {
-  margin-top: 70px;
-  height: 500px;
-  width: 40%;
-  position: relative;
-  float: left;
+.wrap-body {
+    display: inline;
+}
+.host-pfp-smaller {
+    float: left;
+}
+.host-pfp-smaller img{
+    height: 175px;
+    display: inline-block;
 }
 
-#host-3-body {
-  padding-inline: 8%;
+
+
+
+
+@media screen and (max-width: 1000px) {
+    #host-1, #host-2 {
+        width: 100%;
+
+    }
 }
 
-#host-4-body {
-  padding-inline: 8%;
+@media screen and (max-width: 500px) {
+    .tile-body {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .host-pfp img {
+        height: 200px;
+    }
+
+    .host-text-wrap {
+        padding: 10px;
+    }
 }

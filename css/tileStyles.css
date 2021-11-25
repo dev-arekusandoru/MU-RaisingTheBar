@@ -1,6 +1,8 @@
+
 *{
   margin: 0;
   padding: 0;
+
 
 }
 .tiles {
@@ -23,6 +25,8 @@
   border: solid 5px #2c363f;
   border-radius: 30px;
   margin: 20px 20px 10px 20px;
+
+
 
   text-align: center;
 }
