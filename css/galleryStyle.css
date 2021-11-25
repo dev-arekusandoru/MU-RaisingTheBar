@@ -78,17 +78,23 @@
     width: 240px;
     height: 240px;
     margin: 0 5px;
-
+    padding: 0 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 
 
 }
 
 .item div {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #2c363f;
+    border-radius: 20px;
+}
+.item a {
+
     height: 200px;
     width: 200px;
     border: 1px solid #2c363f;
