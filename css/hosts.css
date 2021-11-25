@@ -1,5 +1,5 @@
 .tiles {
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #host-1, #host-2 {
@@ -16,7 +16,6 @@
     padding: 10px;
     font-size: 22px;
     height: 100%;
-    background-color: red;
     overflow-y: scroll;
 }
 .host-pfp {
@@ -33,22 +32,45 @@
 }
 
 .wrap-body {
-    display: inline;
-}
-.host-pfp-smaller {
-    float: left;
-}
-.host-pfp-smaller img{
-    height: 175px;
+    position: relative;
     display: inline-block;
 }
+.wrap-body p {
+    position: relative;
+
+}
+.host-pfp-smaller {
+    position: relative;
+}
+.host-pfp-smaller img{
+    display: inline;
+    float: left;
+    height: 175px;
+}
 
 
+.item div {
+    background-image: url("../img/blank-profile-picture.jpg");
+    background-size: cover;
+}
 
 
+@media screen and (max-width: 1240px) {
+    #host-3, #host-4, #host-5 {
+        width: 44vw;
+    }
+    .tiles {
+        justify-content: space-evenly;
+    }
+    .host-pfp-smaller img{
 
+        height: 250px;
+    }
+
+
+}
 @media screen and (max-width: 1000px) {
-    #host-1, #host-2 {
+    #host-1, #host-2, #host-3, #host-4, #host-5 {
         width: 100%;
 
     }

@@ -1,0 +1,100 @@
+
+#gallery {
+    width: 100%;
+    z-index: 1;
+}
+
+#gallery .tile-header {
+    width: 100.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#gallery a, #gallery a:visited {
+    text-transform: uppercase;
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+}
+
+#gallery .tile-body {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-arrow, #right-arrow {
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    margin: 0;
+    justify-content: center;
+
+}
+
+
+#left-arrow img, #right-arrow img {
+    width: 70%;
+    height: 20%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#scrollable {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    width: 90%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#scroll-pane {
+    z-index: -1;
+
+    height: 240px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.item {
+    width: 240px;
+    height: 240px;
+    margin: 0 5px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.item div {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #2c363f;
+    border-radius: 20px;
+}
+
+.item h3 {
+    text-transform: uppercase;
+}

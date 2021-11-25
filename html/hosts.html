@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="../css/navStyle.css">
     <link rel="stylesheet" href="../css/tileStyles.css">
+    <link rel="stylesheet" href="../css/galleryStyle.css">
     <link rel="stylesheet" href="../css/hosts.css"> <!-- is this right?-->
 </head>
 
@@ -33,10 +34,10 @@
     </div>
 </nav>
 
-<!--First row of tiles-->
+
 <div class="tiles">
-    <!--Host Boxes-->
-    <!--  HOST BOX 1 -->
+
+    <!--  first row of hosts -->
     <div class="tile-div" id="host-1">
 
         <header class="tile-header">
@@ -57,7 +58,6 @@
         </div>
 
     </div>
-    <!--  HOST BOX 2 -->
     <div class="tile-div" id="host-2">
         <header class="tile-header">
             <h1>Lainey</h1>
@@ -76,6 +76,7 @@
 
     </div>
 
+    <!--2nd row of hosts-->
     <div class="tile-div" id="host-3">
 
         <header class="tile-header">
@@ -138,9 +139,61 @@
     </div>
 
 
+    <!--Guest Pane-->
+    <div class="tile-div" id="gallery">
+        <header class="tile-header">
+            <h1>Guests</h1>
+        </header>
+        <div class="tile-body">
+            <div id="left-arrow">
+                <img src="../img/left-arrow.png" id="left-arrow-btn" alt="">
+            </div>
+            <div id="scrollable">
+                <div id="scroll-pane">
+                    <div class="item" id="g1">
+                        <div></div>
+                        <h3>Guest 1</h3>
+                    </div>
+                    <div class="item" id="g2">
+                        <div></div>
+                        <h3>Guest 2</h3>
+                    </div>
+                    <div class="item" id="g3">
+                        <div></div>
+                        <h3>Guest 3</h3>
+                    </div>
+                    <div class="item" id="g4">
+                        <div></div>
+                        <h3>Guest 4</h3>
+                    </div>
+                    <div class="item" id="g5">
+                        <div></div>
+                        <h3>Guest 5</h3>
+                    </div>
+                    <div class="item" id="g6">
+                        <div></div>
+                        <h3>Guest 6</h3>
+                    </div>
+                    <div class="item" id="g7">
+                        <div></div>
+                        <h3>Guest 7</h3>
+                    </div>
+                    <div class="item" id="g8">
+                        <div></div>
+                        <h3>Guest 8</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="right-arrow">
+                <img src="../img/right-arrow.png" id="right-arrow-btn" alt="">
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <script src="../js/nav.js"></script>
+<script src="../js/gallery.js"></script>
 </body>
 
 </html>
