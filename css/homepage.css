@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.tiles {
+    justify-content: space-between;
+}
+
 #about {
     width: 60%;
 }
@@ -18,7 +22,8 @@
 }
 
 #about-img {
-    width: 30%;
+    width: 250px;
+    max-width: 275px;
 }
 
 #about-content {
@@ -153,6 +158,7 @@
 
 #episodes-gallery {
     width: 100%;
+    z-index: 1;
 }
 
 #episodes-gallery .tile-header {
@@ -166,14 +172,81 @@
     text-transform: uppercase;
     color: #eaeaea;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 20px;
+    letter-spacing: 2px;
 }
+
+#episodes-gallery .tile-body {
+    z-index: 1;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#left-arrow, #right-arrow {
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    margin: 0;
+}
+#left-arrow {
+    justify-content: flex-start;
+}
+#right-arrow {
+    justify-content: flex-end;
+}
+
+#left-arrow img, #right-arrow img {
+    width: 70%;
+    height: 20%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#scrollable {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    width: 85%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#scroll-pane {
+    z-index: -1;
+
+    background-image: linear-gradient(to right, red, blue);
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+
+}
+
+.episode {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin: 0 40px;
+}
+
+
 
 
 @media screen and (max-width: 920px) {
     #about {
-        width: 50%;
+        width: 55%;
     }
     #about-img {
         display: none;
@@ -184,7 +257,7 @@
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 888px) {
     .tiles {
         margin-left: 0;
         margin-right: 0;
@@ -209,5 +282,12 @@
 
     #episodes-gallery {
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    #episodes-gallery a {
+        display: none;
     }
 }
