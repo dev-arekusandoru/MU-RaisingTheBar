@@ -37,6 +37,11 @@
     margin: 0;
     justify-content: center;
 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 
@@ -63,7 +68,7 @@
 #scroll-pane {
     z-index: -1;
 
-    height: 240px;
+    height: 245px;
     width: 100%;
 
     display: flex;
@@ -76,13 +81,16 @@
 
 .item {
     width: 240px;
-    height: 240px;
+    height: 245px;
     margin: 0 5px;
     padding: 0 20px;
 
+
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+
 
 
 }
@@ -91,15 +99,24 @@
     height: 200px;
     width: 200px;
     border: 1px solid #2c363f;
+
     border-radius: 20px;
 }
+
+
 .item a {
 
     height: 200px;
     width: 200px;
     border: 1px solid #2c363f;
     border-radius: 20px;
+
+    transition: ease all 0.3s;
 }
+.item a:hover {
+    box-shadow: 0 0 15px #222222;
+}
+
 
 .item h3 {
     text-transform: uppercase;
