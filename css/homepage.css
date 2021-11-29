@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+
 }
 
 .tiles {
@@ -156,6 +158,31 @@
     outline: none;
 }
 
+#episodes {
+    width: 100%;
+}
+
+
+#episodes-carousel {
+    background-color: red;
+}
+
+.gallery-cell {
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
 
 .item a {
     background-image: url("../img/logo_square.jpg");
@@ -179,10 +206,7 @@
 }
 
 @media screen and (max-width: 888px) {
-    .tiles {
-        margin-left: 0;
-        margin-right: 0;
-    }
+
     #about {
         width: 100%;
 
@@ -201,14 +225,28 @@
 
 
 
-    #episodes-gallery {
-        width: 100%;
+    #gallery {
+        width: 90%;
     }
 }
 
 
 @media screen and (max-width: 414px) {
-    #episodes-gallery a {
+    .tiles {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #gallery header a {
         display: none;
     }
+
+    .item {
+        border: 1px solid black;
+    }
+
+    .item div {
+        width: 175px;
+        height: 175px;
+    }
+
 }

@@ -7,9 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="../css/navStyle.css">
     <link rel="stylesheet" href="../css/tileStyles.css">
-    <link rel="stylesheet" href="../css/galleryStyle.css">
     <link rel="stylesheet" href="../css/homepage.css">
-
+    <link rel="stylesheet" href="../css/flickity.css">
     <link rel="shortcut icon" href="../img/logo_square.jpg">
 </head>
 
@@ -77,61 +76,34 @@
         </div>
     </div>
 
-    <div class="tile-div" id="gallery">
-        <header class="tile-header">
-            <h1>Episodes</h1>
-        </header>
-        <div class="tile-body">
-            <div id="left-arrow">
-                <img src="../img/left-arrow.png" id="left-arrow-btn" alt="">
-            </div>
-            <div id="scrollable">
-                <div id="scroll-pane">
-                    <div class="item" id="g1">
-                        <div></div>
-                        <h3>Guest 1</h3>
-                    </div>
-                    <div class="item" id="g2">
-                        <div></div>
-                        <h3>Guest 2</h3>
-                    </div>
-                    <div class="item" id="g3">
-                        <div></div>
-                        <h3>Guest 3</h3>
-                    </div>
-                    <div class="item" id="g4">
-                        <div></div>
-                        <h3>Guest 4</h3>
-                    </div>
-                    <div class="item" id="g5">
-                        <div></div>
-                        <h3>Guest 5</h3>
-                    </div>
-                    <div class="item" id="g6">
-                        <div></div>
-                        <h3>Guest 6</h3>
-                    </div>
-                    <div class="item" id="g7">
-                        <div></div>
-                        <h3>Guest 7</h3>
-                    </div>
-                    <div class="item" id="g8">
-                        <div></div>
-                        <h3>Guest 8</h3>
-                    </div>
-                </div>
-            </div>
-            <div id="right-arrow">
-                <img src="../img/right-arrow.png" id="right-arrow-btn" alt="">
-            </div>
-        </div>
-    </div>
 
+        <div class="gallery js-flickity" id="episodes-carousel">
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+        </div>
 
 
 </div>
 
 <script src="../js/nav.js"></script>
-<script src="../js/gallery.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
+
+<!--
+<div class="main-gallery js-flickity "
+     data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+    <div class="gallery js-flickity">
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+        <div class="gallery-cell"></div>
+    </div>
+</div>
+
+
+<script src="../js/flickity.pkgd.min.js"></script>-->
