@@ -23,7 +23,8 @@
 }
 
 #about-img {
-    width: 250px;
+    min-width: 150px;
+    width: 80em;
     max-width: 275px;
 }
 
@@ -96,6 +97,7 @@
     border-bottom: 1px solid #2c363f;
     background-color: #eaeaea;
     font-size: 16px;
+
 }
 
 #name-field label, #email-field label {
@@ -205,9 +207,10 @@
     #about {
         width: 55%;
     }
-    #about-img {
-        display: none;
+    #about-content p {
+        font-size: 20px;
     }
+
     #contact {
         min-width: 300px;
     }
@@ -220,11 +223,12 @@
         width: 100%;
 
     }
+    #about-img {
+        display: block;
+        width: 150px;
+    }
     #about-content p {
         font-size: 20px;
-    }
-    #about-img {
-        display: none;
     }
 
     #contact {

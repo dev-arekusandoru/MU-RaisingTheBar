@@ -20,13 +20,11 @@
 }
 
 .host-pfp {
-    position: relative;
     height: 250px;
-    display: inline-block;
     margin-right: 5px;
 }
 .host-pfp-smaller{
-    display: inline;
+
     float: left;
     height: 175px;
 }
