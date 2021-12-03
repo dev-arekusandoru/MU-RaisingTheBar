@@ -3,7 +3,6 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 
 .tiles {
@@ -242,13 +241,7 @@
         display: none;
     }
 
-    .item {
-        border: 1px solid black;
-    }
 
-    .item div {
-        width: 175px;
-        height: 175px;
-    }
+
 
 }

@@ -1,0 +1,15 @@
+# TEAM
+
+    Alexandru Muresan
+    Emily Allbee
+    Nathan Malingowski
+    Abigail Garrido
+    AJ Yoon
+
+# GITHUB
+
+
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JavaScript

@@ -50,8 +50,13 @@
 
 
 .item div {
-    background-image: url("../img/blank-profile-picture.jpg");
     background-size: cover;
+}
+.normal {
+    background-image: url("../img/profile.jpg");
+}
+.invert {
+    background-image: url("../img/inverted_profile.jpg");
 }
 
 
