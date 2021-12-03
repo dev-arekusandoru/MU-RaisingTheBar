@@ -186,7 +186,7 @@
 
 
 .item a {
-    background-image: url("../img/logo_square.jpg");
+    background-image: url("./img/logo_square.jpg");
     background-size: cover;
 }
 
