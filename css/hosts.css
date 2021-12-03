@@ -53,10 +53,10 @@
     background-size: cover;
 }
 .normal {
-    background-image: url("./img/profile.jpg");
+    background-image: url("../img/profile.jpg");
 }
 .invert {
-    background-image: url("./img/inverted_profile.jpg");
+    background-image: url("../img/inverted_profile.jpg");
 }
 
 
