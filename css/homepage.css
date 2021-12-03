@@ -186,10 +186,18 @@
 
 
 .item a {
-    background-image: url("../img/logo_square.jpg");
     background-size: cover;
+    transition: ease all 0.3s;
 }
-
+.item a:hover {
+    box-shadow: 0 0 15px #222222;
+}
+.normal {
+    background-image: url("../img/logo_square.jpg");
+}
+.invert {
+    background-image: url("../img/inverted_logo_square.jpg");
+}
 
 
 

@@ -18,31 +18,14 @@
     height: 100%;
     overflow-y: scroll;
 }
-.host-pfp {
-    position: relative;
-    margin-right: 5px;
-    float: left;
 
-}
-.host-pfp img {
+.host-pfp {
     position: relative;
     height: 250px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
 }
-
-.wrap-body {
-    position: relative;
-    display: inline-block;
-}
-.wrap-body p {
-    position: relative;
-
-}
-.host-pfp-smaller {
-    position: relative;
-}
-.host-pfp-smaller img{
+.host-pfp-smaller{
     display: inline;
     float: left;
     height: 175px;
@@ -67,8 +50,9 @@
     .tiles {
         justify-content: space-evenly;
     }
-    .host-pfp-smaller img{
 
+
+    .host-pfp-smaller{
         height: 250px;
     }
 
@@ -85,14 +69,16 @@
     .tile-body {
         display: flex;
         flex-direction: column;
-        overflow-y: scroll;
+        overflow: scroll;
+        align-items: center;
     }
 
-    .host-pfp img {
-        height: 200px;
+    .host-pfp, .host-pfp-smaller {
+        width: 150px;
+    }
+    .tile-body p {
+        overflow-y: visible;
     }
 
-    .host-text-wrap {
-        padding: 10px;
-    }
+
 }
