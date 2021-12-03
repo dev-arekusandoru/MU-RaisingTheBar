@@ -1,3 +1,4 @@
+/*styles how the container should look*/
 #gallery {
     width: 100%;
     z-index: 1;
@@ -28,6 +29,7 @@
     justify-content: space-between;
 }
 
+/*arrow "button" styles*/
 #left-arrow, #right-arrow {
     width: 70px;
     display: flex;
@@ -43,7 +45,6 @@
     user-select: none;
 }
 
-
 #left-arrow img, #right-arrow img {
     width: 70%;
     height: 20%;
@@ -51,6 +52,7 @@
     z-index: 2;
 }
 
+/*styles the scrollable portion*/
 #scrollable {
     margin: 0;
     padding: 0;
@@ -76,6 +78,7 @@
     overflow: hidden;
 }
 
+/*styles individual items*/
 .item {
     width: 240px;
     height: 245px;
@@ -95,7 +98,6 @@
     border-radius: 20px;
 }
 
-
 .item a {
     height: 200px;
     width: 200px;
@@ -104,12 +106,12 @@
     margin-left: 20px;
 }
 
-
 .item h3 {
     margin-top: 7px;
     text-transform: uppercase;
 }
 
+/*shrink item for smaller screens*/
 @media screen and (max-width: 375px) {
     .item div, .item a {
         width: 175px;

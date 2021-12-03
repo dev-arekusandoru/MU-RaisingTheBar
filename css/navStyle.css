@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 
+/*defines background and font to be used on all pages*/
 body {
     background-color: #eaeaea;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
+/*sets up nav*/
 nav {
-    
+
     z-index: -1;
     padding: 0;
     display: flex;
@@ -22,6 +24,7 @@ nav {
     align-items: center;
 }
 
+/*styles for left side of nav*/
 #left-nav {
     margin-left: 20px;
     margin-top: 1px;
@@ -45,6 +48,7 @@ nav {
     margin-left: 10px;
 }
 
+/*styles nav links*/
 .nav-links {
     /*set to 360px when merch */
     min-width: 250px;
@@ -63,10 +67,12 @@ nav {
     letter-spacing: 3px;
 }
 
+/*hides merch tab bc its not ready yet*/
 #merch {
     display: none;
 }
 
+/*nav link interactions*/
 .nav-links li a {
     text-decoration: none;
     padding: 23px 20px 24px 20px;
@@ -80,6 +86,8 @@ nav {
     color: #eaeaea;
 }
 
+
+/*styles the burger icon*/
 .burger {
     display: none;
     cursor: pointer;
@@ -95,6 +103,7 @@ nav {
 }
 
 /*code inspired from https://www.youtube.com/watch?v=gXkqy0b4M5g*/
+/*defines how the menu acts and adapts when the screen is small/for mobile devices*/
 @media screen and (max-width: 700px) {
     html, body {
         position: relative;
@@ -132,6 +141,7 @@ nav {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+
     .nav-links li {
         opacity: 1;
     }
@@ -160,9 +170,11 @@ nav {
 .toggle #line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .toggle #line2 {
     opacity: 0;
 }
+
 .toggle #line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }

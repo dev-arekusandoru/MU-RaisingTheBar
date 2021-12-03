@@ -1,17 +1,18 @@
+/*changes spacing of tiles*/
 .tiles {
     justify-content: space-between;
 }
 
+/*host tile widths*/
 #host-1, #host-2 {
     width: 44vw;
-
 }
 
 #host-3, #host-4, #host-5 {
     width: 30%;
 }
 
-
+/*text formatting*/
 .tile-body p {
     padding: 10px;
     font-size: 22px;
@@ -19,43 +20,50 @@
     overflow-y: scroll;
 }
 
+/*picture sizing and formatting*/
 .host-pfp {
     height: 250px;
     margin-right: 5px;
 }
-.host-pfp-smaller{
+
+.host-pfp-smaller {
 
     float: left;
     height: 175px;
 }
 
-
+/*images for guests*/
 .item div {
     background-size: cover;
 }
+
 .normal {
     background-image: url("../img/profile.jpg");
 }
+
 .invert {
     background-image: url("../img/inverted_profile.jpg");
 }
 
 
+/*changes the designs responsively for different screen sizes*/
 @media screen and (max-width: 1240px) {
     #host-3, #host-4, #host-5 {
         width: 44vw;
     }
+
     .tiles {
         justify-content: space-evenly;
     }
 
 
-    .host-pfp-smaller{
+    .host-pfp-smaller {
         height: 250px;
     }
 
 
 }
+
 @media screen and (max-width: 1000px) {
     #host-1, #host-2, #host-3, #host-4, #host-5 {
         width: 100%;
@@ -74,6 +82,7 @@
     .host-pfp, .host-pfp-smaller {
         width: 150px;
     }
+
     .tile-body p {
         overflow-y: visible;
     }

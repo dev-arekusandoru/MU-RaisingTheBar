@@ -1,154 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Episodes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episodes</title>
+    <!--Link stylesheets, font and favicon-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navStyle.css">
+    <link rel="stylesheet" href="../css/tileStyles.css">
+    <link rel="stylesheet" href="../css/episodes.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link rel="stylesheet" href="../css/navStyle.css">
-  <link rel="stylesheet" href="../css/tileStyles.css">
-  <link rel="stylesheet" href="../css/episodes.css">
-
-  <link rel="shortcut icon" href="../img/logo_square.jpg">
+    <link rel="shortcut icon" href="../img/logo_square.jpg">
 </head>
 <body>
 <!--Navigation Bar-->
 <nav>
-  <div id="left-nav">
-    <img src="../img/logo_inverted.png" alt="">
-    <a href="homepage.html">Raising the Bar</a>
-  </div>
-  <div id="right-nav">
-    <ul class="nav-links">
-      <li><a href="../html/hosts.html">Hosts</a></li>
-      <li><a href="../html/episodes.html">Episodes</a></li>
+    <div id="left-nav">
+        <img src="../img/logo_inverted.png" alt="">
+        <a href="homepage.html">Raising the Bar</a>
+    </div>
+    <div id="right-nav">
+        <ul class="nav-links">
+            <li><a href="../html/hosts.html">Hosts</a></li>
+            <li><a href="../html/episodes.html">Episodes</a></li>
 
-      <!--Merch Page coming soon-->
-      <li id="merch"><a href="../html/merch.html">Merch</a></li>
+            <!--Merch Page coming soon-->
+            <li id="merch"><a href="../html/merch.html">Merch</a></li>
 
-    </ul>
-  </div>
-  <div class="burger">
-    <div id="line1"></div>
-    <div id="line2"></div>
-    <div id="line3"></div>
-  </div>
+        </ul>
+    </div>
+    <div class="burger">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+    </div>
 </nav>
 
-
+<!--layout change div-->
 <div id="episodes-page-layout">
-  <div id="layoutSelector">
-    <span id="gridLayout">
+    <!--div that functions as a button
+    controls the page layout-->
+    <div id="layoutSelector">
+        <!--grid layout image and text-->
+        <span id="gridLayout">
       <img src="../img/gridLayoutIcon.png" alt="">
       Grid View
     </span>
-    <span id="listLayout">
+        <!--list layout image and text-->
+        <span id="listLayout">
       <img src="../img/listLayoutIcon.png" alt="">
       List View
     </span>
-
-  </div>
+    </div>
 </div>
 
-
+<!--main portion of page, same as the rest-->
 <div class="tiles">
-  <div class="tile-div" id="episode1">
-    <header class="tile-header">
-      <h1>Episode 1</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
-  <div class="tile-div" id="episode2">
-    <header class="tile-header">
-      <h1>Episode 2</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
-  <div class="tile-div" id="episode3">
-    <header class="tile-header">
-      <h1>Episode 3</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
-  <div class="tile-div" id="episode4">
-    <header class="tile-header">
-      <h1>Episode 4</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
-  <div class="tile-div" id="episode5">
-    <header class="tile-header">
-      <h1>Episode 5</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
-  <div class="tile-div" id="episode6">
-    <header class="tile-header">
-      <h1>Episode 6</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
-  <div class="tile-div" id="episode7">
-    <header class="tile-header">
-      <h1>Episode 7</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
-  <div class="tile-div" id="episode8">
-    <header class="tile-header">
-      <h1>Episode 8</h1>
-    </header>
-    <section class="tile-body">
-      <h2><strong>TITLE</strong></h2>
-      <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis suscipit velit. Quisque lorem ligula, dignissim.</p>
-      <p class="episode-guests">Guest(s): </p>
-      <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
-    </section>
-  </div>
+    <!--episode tiles
+    follow the same template as the rest-->
+    <div class="tile-div" id="episode1">
+        <header class="tile-header">
+            <h1>Episode 1</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
+    <div class="tile-div" id="episode2">
+        <header class="tile-header">
+            <h1>Episode 2</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
+    <div class="tile-div" id="episode3">
+        <header class="tile-header">
+            <h1>Episode 3</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
+    <div class="tile-div" id="episode4">
+        <header class="tile-header">
+            <h1>Episode 4</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
+    <div class="tile-div" id="episode5">
+        <header class="tile-header">
+            <h1>Episode 5</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
+    <div class="tile-div" id="episode6">
+        <header class="tile-header">
+            <h1>Episode 6</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
+    <div class="tile-div" id="episode7">
+        <header class="tile-header">
+            <h1>Episode 7</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
+    <div class="tile-div" id="episode8">
+        <header class="tile-header">
+            <h1>Episode 8</h1>
+        </header>
+        <section class="tile-body">
+            <h2><strong>TITLE</strong></h2>
+            <p class="episode-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+                suscipit velit. Quisque lorem ligula, dignissim.</p>
+            <p class="episode-guests">Guest(s): </p>
+            <a href="https://open.spotify.com/show/0rhkY4kp5FHRss5pnjF6SN" target="_blank">Watch</a>
+        </section>
+    </div>
 </div>
+
+<!--back to top button-->
 <div id="back-to-top">
-  <a href="#left-nav"> Back To Top</a>
+    <a href="#left-nav"> Back To Top</a>
 </div>
 
-
-
-
+<!--link necessary js files-->
 <script src="../js/nav.js"></script>
 <script src="../js/episodes.js"></script>
 </body>
