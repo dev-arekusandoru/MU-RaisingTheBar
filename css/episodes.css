@@ -19,7 +19,6 @@ defines style for grid layout
     text-align: left;
     padding-left: 0.6em;
     margin-bottom: 0;
-    letter-spacing: 0.1em;
 
 }
 
@@ -70,6 +69,13 @@ defines style for grid layout
     height: 150px;
 }
 
+#episode1 section .episode-description {
+    height: 200px;
+}
+#episode1 section .episode-guests {
+    height: 30px;
+}
+
 /*styles back to top button*/
 #back-to-top {
     display: flex;
@@ -99,7 +105,7 @@ defines style for grid layout
     border-top-right-radius: 0;
 }
 
-.toggle .tile-body h1 {
+.toggle .tile-body h2 {
     display: none;
 }
 
@@ -123,6 +129,9 @@ defines style for grid layout
     overflow-y: scroll;
     width: auto;
     padding: 5px 0 0 5px;
+}
+.toggle #episode1 section .episode-description {
+    height: 99%;
 }
 
 .toggle .episode-guests {
