@@ -115,6 +115,8 @@ nav {
     }
 
     .nav-links {
+        z-index: 2;
+
         position: absolute;
         right: 0;
         height: 92vh;
@@ -131,7 +133,7 @@ nav {
         transition: transform 0.5s ease-in;
     }
     .nav-links li {
-        opacity: 0;
+        opacity: 1;
     }
 
     .burger {
