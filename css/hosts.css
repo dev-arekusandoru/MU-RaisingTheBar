@@ -89,3 +89,14 @@
 
 
 }
+
+@media screen and (max-width: 414px) {
+    .tiles {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #gallery {
+        width: 90%;
+    }
+}
